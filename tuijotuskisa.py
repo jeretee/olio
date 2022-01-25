@@ -60,7 +60,11 @@ class Peikko:
 
 ### Kirjoita luokka Sankari tähän.
 class Sankari:
-    def __init__(nimi)
+    
+    def __init__(nimi):
+        self.nimi = nimi
+        
+
 
 def hurraa(olio):
     """Tulostaa satunnaisen hurrauksen annetulle oliolle.
