@@ -5,9 +5,9 @@ import time
 class Olento:
     
     def __init__(self):
-        
+        self.rohkeus = random.randint(4, 8)
+        self.katseen_voima = random.randint(2, 4)
 
-    
 
 
 
