@@ -8,6 +8,26 @@ class Olento:
         self.rohkeus = random.randint(4, 8)
         self.katseen_voima = random.randint(2, 4)
 
+class Vuorenpeikko(Peikko):
+    NIMITAVUT = ("Ab", "Re", "Qe", "De", "El", "Par", "Bar", "Raj", "Ragh", "Ej")
+    RIEMUTAVUT = ("Aaa", "Raa", "Bää", "Ax", "Asas", "Haa", "grr", "Gur", "Räyh")
+
+    def __init__(self):
+        """Konstruktori."""
+        self.nimi = self._arvo_sanat(self.NIMITAVUT, 3, "-")
+        self.rohkeus = random.randint(2, 6)
+        self.katseen_voima = random.randint(1, 2)
+
+
+class Luolapeikko(Peikko):
+    NIMITAVUT = ("Aa", "Arg", "Del", "De", "Hurgar", "Cc", "Ranskis", "Rauh", "Err", "Grach")
+    RIEMUTAVUT = ("Hää", "Graa", "Boo", "Hrrr", "Qrrr", "Zar", "Jea", "Brr", "Nam")
+
+    def __init__(self):
+        """Konstruktori."""
+        self.nimi = self._arvo_sanat(self.NIMITAVUT, 3, "-")
+        self.rohkeus = random.randint(3, 8)
+        self.katseen_voima = random.randint(1, 4)
 
 
 
