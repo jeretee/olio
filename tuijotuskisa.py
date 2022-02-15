@@ -2,7 +2,16 @@ import random
 import time
 
 
-class Peikko:
+class Olento:
+    
+    def __init__(self):
+        
+
+    
+
+
+
+class Peikko(Olento):
     """Luokka, joka kuvaa Peikon.
     :ivar nimi: peikon nimi, arvotaan
     :type nimi: str
@@ -55,7 +64,7 @@ class Peikko:
 
 
 ### Kirjoita luokka Sankari tähän.
-class Sankari:
+class Sankari(Olento):
 
 
     def __init__(self,nimi):
