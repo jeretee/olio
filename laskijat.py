@@ -48,7 +48,7 @@ class MonenLaskija:
         """
         return sum(luvut)
 
-    def kerro(self, a, b):
+    def kerro(self, *luvut):
         """Palauttaa annettujen lukujen tulon.
 
         :param luvut: tulon ensimmäinen luku
@@ -61,6 +61,12 @@ class MonenLaskija:
         for luku in luvut:
             tulo *= luku
         return tulo
+
+def argumenttien_tulostaja(**purettavat):
+    """Tulostaa tiedot"""
+    for k, v in purettavat.items():
+        print(f'Argumentin "(k)" arvo on (v).')
+
 
 
 ### Seuraavat rivit tekevät tarkistustulostukset. Älä koske niihin.
