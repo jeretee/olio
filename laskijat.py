@@ -36,11 +36,31 @@ class Laskija:
 
 ### Lisää MonenLaskija ja argumenttien_tulostaja tähän.
 
-class MonenLaskija(Laskija):
-    def summaa(self, *args)
+class MonenLaskija:
 
-    def kerro(self, *args)
-    
+    def summaa(self, *luvut):
+        """Palauttaa annettujen lukujen summan.
+
+        :param luvut: summattavat luvut
+        :type luvut: Tuple[Union[int, float]
+        :return: lukujen summa
+        :rtype: Union[int, float]
+        """
+        return sum(luvut)
+
+    def kerro(self, a, b):
+        """Palauttaa annettujen lukujen tulon.
+
+        :param luvut: tulon ensimmäinen luku
+        :type luvut: Union[int, float]
+
+        :return: lukujen tulo
+        :rtype: Union[int, float]
+        """
+        tulo = 1
+        for luku in luvut:
+            tulo *= luku
+        return tulo
 
 
 ### Seuraavat rivit tekevät tarkistustulostukset. Älä koske niihin.
