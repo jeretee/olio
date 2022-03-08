@@ -10,7 +10,11 @@ class Asiakas:
         __luo_nro()
     """
 
-    pass
+    def __init__(self):
+        """konstruktori"""
+        self.__nimi = ""
+        self.__asiakasnro = self.__luo_nro()
+        self.__ika = ""
 
 class Palvelu:
     """Palvelu luokka
@@ -25,16 +29,21 @@ class Palvelu:
         tulosta_asiakkaat()
     """
 
-    pass
+    def __init__(self):
+        """konstruktori"""
+        self.tuotenimi = ""
+        self.__asiakkaat = asiakkaat()
 
 class ParempiPalvelu:
     """ParempiPalvelu luokka
     :ivar edut: palvelun edut
-    :type edut: str
+    :type edut: str, list
     Julkiset metodit
         _lisaa_etu(str)
         _poista_etu(str)
         _tulosta_edut()
     """
 
-    pass
+    def __init__(self):
+        """konstruktori"""
+        self.edut = edut()
