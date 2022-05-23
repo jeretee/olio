@@ -1,49 +1,64 @@
-class Asiakas:
-    """Luokka jossa syötetään asiakkaan tiedot
-    :ivar __nimi: asiakkaan nimi
-    :type __nimi: str
-    :ivar __asiakasnro: asiakkaan numero
-    :type __asiakasnro: int
-    :ivar __ika: asiakkaan ikä
-    :type __ika: int
-    Julkiset metodit
-        __luo_nro()
-    """
+import random
 
-    def __init__(self):
-        """konstruktori"""
-        self.__nimi = ""
-        self.__asiakasnro = self.__luo_nro()
-        self.__ika = ""
+class Asiakas:
+    def __luo_nro(self):
+        """Muodostaa satunnaisen asiakasnumeron
+        :ivar numerolista: lista jossa satunnaisesti generoitu asiakasnumero
+        :type numerolista: int[]
+        """
+        numerolista = []
+        numerolista.append(random.randint(0, 99))
+        numerolista.append(random.randint(0, 999))
+        numerolista.append(random.randint(0, 999))
+        return numerolista
+
+    def __init__(self, nimi, ika):
+        """Konstruktori, jonka muuttujat peritÃ¤Ã¤n
+        :ivar asiakasnumero: asiakkaan puhelin numero
+        :type asiakasnumero: int[]
+        :ivar nimi: asiakkaan nimi
+        :type nimi: str
+        :ivar ika: asiakkaan ikÃ¤
+        :type ika: int
+        """
+        self.__asiakasnumero = self.__luo_nro()
+        self.__nimi = (str)nimi
+        self.__ika = (int)ika
+
+        def get_nimi(self):
+            return self__nimi
+        def get_ika(self):
+            return self.__ika
+        def set_nimi(self, uusinimi):
+            if uusinimi == False:
+                raise ValueError:("Anna toinen nimi")
+            if uusinimi == True:
+                self.__nimi = uusinimi
+        def set_ika(self, uusiika):
+            if lisaanimi == True:
+                raise ValueError:("Anna toinen ika"):
+            if uusika == True:
+                self.__ika = uusiika
 
 class Palvelu:
-    """Palvelu luokka
-    :ivar tuotenimi: tuotteen nimi
-    :type tuotenimi: str
-    :ivar __asiakkaat: lista asiakkasita
-    :type __asiakkaat: list
-    Julkiset metodit
-        _luo_asiakasrivi(Asiakas)
-        lisaa_asiakas(Asiakas)
-        poista_asiakas(Asiakas)
-        tulosta_asiakkaat()
-    """
+    def __init__(self, Asiakas):
+        self asiakkaat = []
+    def luo_asiakasrivi(self, Asiakas)
+    def lisaa_asiakas(self, Asiakas)
+    def poista_asiakas(self, Asiakas)
+    def tulosta_asiakkaat(self)
+    
 
-    def __init__(self):
-        """konstruktori"""
-        self.tuotenimi = ""
-        self.__asiakkaat = asiakkaat()
+
+
+
 
 class ParempiPalvelu:
-    """ParempiPalvelu luokka
-    :ivar edut: palvelun edut
-    :type edut: str, list
-    Julkiset metodit
-        _lisaa_etu(str)
-        _poista_etu(str)
-        _tulosta_edut()
-    """
-
     def __init__(self):
-        """konstruktori"""
-        self.edut = edut()
+        def __edut
+    def lisaa_etu(self):
+        pass
+    def poista_etu(self):
+        pass
+    def tulosta_edut(self):
+        pass
